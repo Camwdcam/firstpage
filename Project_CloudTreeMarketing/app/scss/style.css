@@ -1,0 +1,100 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 1;
+  padding: 3;
+  font-family: "Public Sans", sans-serif;
+  line-height: 10;
+  background-color: #ffffff;
+}
+
+/* Allgemeine Stildefinitionen */
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(84, 0, 239, 0); /* Hintergrundfarbe transparent */
+  padding: 14px;
+  width: 15ch; /* Hier habe ich die Breite auf 15ch reduziert */
+  height: 20px; /* Hier habe ich die Höhe auf 20px festgelegt */
+  margin-left: 110ch;
+}
+
+.tab {
+  padding: 30px 15px; /* Hier habe ich die Padding-Werte reduziert */
+  color: rgb(255, 255, 255); /* Textfarbe der Register */
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: rgba(84, 0, 239, 0); /* Hintergrundfarbe transparent */
+  border-radius: 5px; /* Optional: Füge eine abgerundete Ecke hinzu */
+}
+
+/* Optionale Stile für Hover-Effekt */
+.tab:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ac-c {
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
+
+/*chatgpt*/
+#progress-text {
+  font-size: 40px;
+  color: #ff0000; /* Rote Textfarbe */
+  font-family: "Arial", sans-serif; /* Ändere die Schriftart hier */
+  text-align: center;
+  margin-top: 10px; /* Optional, um den Text nach unten zu verschieben */
+  /* Weitere Stilregeln hier hinzufügen, je nachdem wie du den Text gestalten möchtest */
+}
+
+body {
+  margin: 0; /* Entfernt den Standard-Rand von <body> */
+  overflow: hidden; /* Verhindert Scrollbalken bei Vollbildvideo */
+}
+
+#Background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Hintergrundvideo unter dem Inhaltselement platzieren */
+  object-fit: cover; /* Skaliert das Video, um den gesamten Bildschirm zu füllen */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Inhaltsbereich über das Hintergrundvideo platzieren */
+  padding: 20px;
+  color: white; /* Schriftfarbe für den Inhaltsbereich (optional) */
+}
+
+.logo {
+  width: 100px; /* Ändere die Breite nach deinen Wünschen */
+  height: auto; /* Die Höhe wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+}
+
+/* Optional: Stil für den Link (optional) */
+.logo-link {
+  display: inline-block; /* Damit der Link wie ein Inline-Element behandelt wird und keine zusätzlichen Abstände um das Logo entstehen */
+}
